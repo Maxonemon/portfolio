@@ -9,9 +9,9 @@ export default function Home() {
             Computer Science Student & Developer
           </p>
           <div className="text-gray-400 mt-2">
-            <p>📧 your.email@example.com</p>
-            <p>📱 Your Phone Number</p>
-            <p>📍 Your Location</p>
+            <p>📧 maguettemaguettesall@gmail.com</p>
+            <p>📱 +221 785998132</p>
+            <p>📍 Dakar, Senegal</p>
           </div>
         </header>
 
@@ -25,7 +25,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold">
                 Bachelor in Computer Science
               </h3>
-              <p className="text-gray-400">University Name • 2021 - Present</p>
+              <p className="text-gray-400">University Name • 2022 - Present</p>
               <p className="text-gray-300">
                 Relevant coursework: Data Structures, Algorithms, Web
                 Development
@@ -60,7 +60,7 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-semibold">Web Development Intern</h3>
               <p className="text-gray-400">
-                Company Name • June 2023 - August 2023
+                Jumia Senegal • June 2023 - August 2023
               </p>
               <ul className="list-disc list-inside text-gray-300 mt-2">
                 <li>Developed and maintained responsive web applications</li>
@@ -86,9 +86,9 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold">E-commerce Platform</h3>
+              <h3 className="text-lg font-semibold">Chatbot for Excel user</h3>
               <p className="text-gray-300">
-                Developed a full-stack e-commerce application using MERN stack
+                Developed a chatbot using mistral api
               </p>
             </div>
           </div>

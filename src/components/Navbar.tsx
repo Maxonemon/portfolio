@@ -1,5 +1,5 @@
 "use client";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Navbar() {
   const menuItems = ["Home", "About", "Skills", "Projects", "Contact"];
@@ -12,14 +12,14 @@ export default function Navbar() {
           <ul className="hidden md:flex space-x-8">
             {menuItems.map((item) => (
               <li key={item}>
-                <Link
+                <ScrollLink
                   to={item.toLowerCase()}
                   smooth={true}
                   duration={500}
                   className="text-gray-300 hover:text-primary cursor-pointer"
                 >
                   {item}
-                </Link>
+                </ScrollLink>
               </li>
             ))}
           </ul>

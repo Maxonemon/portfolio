@@ -13,7 +13,7 @@ export default function Home() {
               Computer Science Student & Developer
             </p>
             <p className="text-lg text-gray-400 max-w-2xl">
-              I'm a 20-year-old computer science student passionate about
+              I&apos;m a 20-year-old computer science student passionate about
               creating beautiful and functional web and mobile applications.
             </p>
           </div>
@@ -25,9 +25,9 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-8">About Me</h2>
             <div className="bg-gray-800/20 p-8 rounded-lg">
               <p className="text-lg text-gray-300">
-                I am currently pursuing my degree in Computer Science, where I'm
-                developing a strong foundation in software development and
-                problem-solving. My passion lies in creating intuitive and
+                I am currently pursuing my degree in Computer Science, where
+                I&apos;m developing a strong foundation in software development
+                and problem-solving. My passion lies in creating intuitive and
                 responsive web applications using modern technologies.
               </p>
             </div>

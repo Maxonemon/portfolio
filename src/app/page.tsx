@@ -1,131 +1,110 @@
-import Navbar from "@/components/Navbar";
-
 export default function Home() {
   return (
-    <>
-      <Navbar />
-      <main className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
-        {/* Hero Section */}
-        <section id="home" className="min-h-screen flex items-center">
-          <div className="container mx-auto px-4 py-20">
-            <h1 className="text-5xl font-bold mb-4">Maguette Sall</h1>
-            <p className="text-xl text-gray-300 mb-8">
-              Computer Science Student & Developer
-            </p>
-            <p className="text-lg text-gray-400 max-w-2xl">
-              I&apos;m a 20-year-old computer science student passionate about
-              creating beautiful and functional web and mobile applications.
-            </p>
+    <main className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white p-8">
+      {/* Header Section */}
+      <div className="max-w-3xl mx-auto space-y-8">
+        <header className="text-center mb-12">
+          <h1 className="text-4xl font-bold mb-2">Maguette Sall</h1>
+          <p className="text-xl text-gray-300">
+            Computer Science Student & Developer
+          </p>
+          <div className="text-gray-400 mt-2">
+            <p>📧 your.email@example.com</p>
+            <p>📱 Your Phone Number</p>
+            <p>📍 Your Location</p>
           </div>
-        </section>
+        </header>
 
-        {/* About Section */}
-        <section id="about" className="min-h-screen flex items-center">
-          <div className="container mx-auto px-4 py-16">
-            <h2 className="text-3xl font-bold mb-8">About Me</h2>
-            <div className="bg-gray-800/20 p-8 rounded-lg">
-              <p className="text-lg text-gray-300">
-                I am currently pursuing my degree in Computer Science, where
-                I&apos;m developing a strong foundation in software development
-                and problem-solving. My passion lies in creating intuitive and
-                responsive web applications using modern technologies.
+        {/* Education */}
+        <section>
+          <h2 className="text-2xl font-bold mb-4 border-b border-gray-700 pb-2">
+            Education
+          </h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="text-lg font-semibold">
+                Bachelor in Computer Science
+              </h3>
+              <p className="text-gray-400">University Name • 2021 - Present</p>
+              <p className="text-gray-300">
+                Relevant coursework: Data Structures, Algorithms, Web
+                Development
               </p>
             </div>
           </div>
         </section>
 
-        {/* Skills Section */}
-        <section id="skills" className="min-h-screen flex items-center">
-          <div className="container mx-auto px-4 py-16">
-            <h2 className="text-3xl font-bold mb-8">My Skills</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-              {[
-                { name: "HTML", level: "90%" },
-                { name: "CSS", level: "85%" },
-                { name: "JavaScript", level: "80%" },
-                { name: "React", level: "75%" },
-                { name: "React Native", level: "70%" },
-              ].map((skill) => (
-                <div key={skill.name} className="bg-gray-800/40 p-6 rounded-lg">
-                  <p className="text-lg mb-2">{skill.name}</p>
-                  <div className="w-full bg-gray-700 rounded-full h-2.5">
-                    <div
-                      className="bg-primary h-2.5 rounded-full"
-                      style={{ width: skill.level }}
-                    ></div>
-                  </div>
-                </div>
-              ))}
+        {/* Skills */}
+        <section>
+          <h2 className="text-2xl font-bold mb-4 border-b border-gray-700 pb-2">
+            Technical Skills
+          </h2>
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <h3 className="font-semibold mb-2">Programming Languages</h3>
+              <p className="text-gray-300">HTML, CSS, JavaScript, Python</p>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-2">Frameworks & Tools</h3>
+              <p className="text-gray-300">React, Next.js, Git, Node.js</p>
             </div>
           </div>
         </section>
 
-        {/* Projects Section */}
-        <section id="projects" className="min-h-screen flex items-center">
-          <div className="container mx-auto px-4 py-16">
-            <h2 className="text-3xl font-bold mb-8">Projects</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {[1, 2].map((project) => (
-                <div key={project} className="bg-gray-800/40 p-6 rounded-lg">
-                  <h3 className="text-xl font-bold mb-2">Project {project}</h3>
-                  <p className="text-gray-300 mb-4">
-                    Description of your project goes here. Explain what you
-                    built and what technologies you used.
-                  </p>
-                  <div className="flex space-x-4">
-                    <a href="#" className="text-primary hover:underline">
-                      View Project
-                    </a>
-                    <a href="#" className="text-primary hover:underline">
-                      GitHub
-                    </a>
-                  </div>
-                </div>
-              ))}
+        {/* Experience */}
+        <section>
+          <h2 className="text-2xl font-bold mb-4 border-b border-gray-700 pb-2">
+            Experience
+          </h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-semibold">Web Development Intern</h3>
+              <p className="text-gray-400">
+                Company Name • June 2023 - August 2023
+              </p>
+              <ul className="list-disc list-inside text-gray-300 mt-2">
+                <li>Developed and maintained responsive web applications</li>
+                <li>Collaborated with senior developers on various projects</li>
+                <li>Implemented new features using React and Next.js</li>
+              </ul>
             </div>
           </div>
         </section>
 
-        {/* Contact Section */}
-        <section id="contact" className="min-h-screen flex items-center">
-          <div className="container mx-auto px-4 py-16">
-            <h2 className="text-3xl font-bold mb-8">Contact Me</h2>
-            <div className="bg-gray-800/40 p-8 rounded-lg max-w-2xl mx-auto">
-              <form className="space-y-6">
-                <div>
-                  <label className="block text-gray-300 mb-2">Name</label>
-                  <input
-                    type="text"
-                    className="w-full p-2 rounded bg-gray-700 text-white"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div>
-                  <label className="block text-gray-300 mb-2">Email</label>
-                  <input
-                    type="email"
-                    className="w-full p-2 rounded bg-gray-700 text-white"
-                    placeholder="your@email.com"
-                  />
-                </div>
-                <div>
-                  <label className="block text-gray-300 mb-2">Message</label>
-                  <textarea
-                    className="w-full p-2 rounded bg-gray-700 text-white h-32"
-                    placeholder="Your message"
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="bg-primary text-white px-6 py-2 rounded hover:bg-primary/80 transition-colors"
-                >
-                  Send Message
-                </button>
-              </form>
+        {/* Projects */}
+        <section>
+          <h2 className="text-2xl font-bold mb-4 border-b border-gray-700 pb-2">
+            Projects
+          </h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="text-lg font-semibold">
+                Personal Portfolio Website
+              </h3>
+              <p className="text-gray-300">
+                Built using Next.js, Tailwind CSS, and TypeScript
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold">E-commerce Platform</h3>
+              <p className="text-gray-300">
+                Developed a full-stack e-commerce application using MERN stack
+              </p>
             </div>
           </div>
         </section>
-      </main>
-    </>
+
+        {/* Languages */}
+        <section>
+          <h2 className="text-2xl font-bold mb-4 border-b border-gray-700 pb-2">
+            Languages
+          </h2>
+          <div className="space-y-2">
+            <p className="text-gray-300">English (Fluent)</p>
+            <p className="text-gray-300">French (Native)</p>
+          </div>
+        </section>
+      </div>
+    </main>
   );
 }

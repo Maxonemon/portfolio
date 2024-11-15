@@ -25,7 +25,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold">
                 Bachelor in Computer Science
               </h3>
-              <p className="text-gray-400">University Name • 2022 - Present</p>
+              <p className="text-gray-400">DAUST • 2022 - Present</p>
               <p className="text-gray-300">
                 Relevant coursework: Data Structures, Algorithms, Web
                 Development
@@ -105,6 +105,10 @@ export default function Home() {
           </div>
         </section>
       </div>
+      {/* Footer */}
+      <footer className="text-center text-gray-400 mt-16 pb-8">
+        <p>&copy; Maguette Sall {new Date().getFullYear()}</p>
+      </footer>
     </main>
   );
 }
